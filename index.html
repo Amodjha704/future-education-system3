@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Future Education</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">Future Education</div>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="technologies.html">Technologies</a></li>
+      <li><a href="methodologies.html">Methodologies</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <header class="hero">
+    <h1>The Future of Education</h1>
+    <p>Discover how emerging technologies and innovative methodologies are transforming learning for everyone.</p>
+    <button id="learnMoreBtn">Learn More</button>
+  </header>
+  <main>
+    <section>
+      <h2>What is Future Education?</h2>
+      <p>Future Education is about leveraging cutting-edge technology and novel teaching strategies to create personalized, engaging, and effective learning experiences.</p>
+    </section>
+    <section class="interactive-section">
+      <div class="interactive-card" tabindex="0" onclick="showModal('tech')">
+        <h3>Future Technologies</h3>
+        <p>AI Tutors, VR Classrooms, Adaptive Learning</p>
+        <span>Click to Preview</span>
+      </div>
+      <div class="interactive-card" tabindex="0" onclick="showModal('methods')">
+        <h3>Innovative Methodologies</h3>
+        <p>Flipped Classroom, Gamification, Project-Based Learning</p>
+        <span>Click to Preview</span>
+      </div>
+    </section>
+    <section class="about-section">
+      <h2>About</h2>
+      <p>This site demonstrates how technology and pedagogy can blend to enhance education. Explore more details and interactive examples on the Technologies and Methodologies pages.</p>
+      <button id="contactBtn">Contact</button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Future Education. All rights reserved.</p>
+  </footer>
+  <!-- Modal Structure -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+  <!-- Contact Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeContact">&times;</span>
+      <h3>Contact Us</h3>
+      <form id="contactForm">
+        <label for="cname">Name:</label>
+        <input type="text" id="cname" name="name" required>
+        <label for="cemail">Email:</label>
+        <input type="email" id="cemail" name="email" required>
+        <label for="cmsg">Message:</label>
+        <textarea id="cmsg" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div id="thankYouMsg" style="display:none;">Thank you for contacting us!</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
